@@ -592,3 +592,94 @@ Stack trace:
 REQUEST_URI=/css/print.css
 HTTP_REFERER=http://bbds.dev/book/addbook
 ---
+2016/03/10 09:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\githubworkspaces\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/main.css
+HTTP_REFERER=http://bbds.dev/
+---
+2016/03/10 09:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\githubworkspaces\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/print.css
+HTTP_REFERER=http://bbds.dev/
+---
+2016/03/10 09:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\githubworkspaces\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://bbds.dev/
+---
+2016/03/10 09:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\githubworkspaces\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://bbds.dev/
+---
+2016/03/10 09:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\githubworkspaces\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://bbds.dev/
+---
+2016/03/10 14:31:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "changeformat".' in D:\githubworkspaces\framework\web\CController.php:483
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CController.php(270): CController->missingAction('changeformat')
+#1 D:\githubworkspaces\framework\web\CWebApplication.php(282): CController->run('changeformat')
+#2 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('test/changeform...')
+#3 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/changeformat
+---
+2016/03/10 14:31:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\githubworkspaces\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/main.css
+HTTP_REFERER=http://bbds.dev/test/changeformat
+---
+2016/03/10 14:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\githubworkspaces\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://bbds.dev/test/changeformat
+---
+2016/03/10 14:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\githubworkspaces\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/print.css
+HTTP_REFERER=http://bbds.dev/test/changeformat
+---
+2016/03/10 14:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\githubworkspaces\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\githubworkspaces\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\githubworkspaces\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\githubworkspaces\bbdspider\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://bbds.dev/test/changeformat
+---
