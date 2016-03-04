@@ -1,0 +1,444 @@
+2015/05/11 14:09:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addcate".' in D:\workspaces\apache\framework\web\CController.php:483
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(270): CController->missingAction('addcate')
+#1 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addcate')
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('site/addcate')
+#3 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/addcate
+---
+2015/05/11 14:09:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://learn.dev/site/addcate
+---
+2015/05/11 14:16:54 [error] [php] Declaration of Cate::delete() should be compatible with CActiveRecord::delete() (D:\workspaces\apache\testing\learn\protected\models\Cate.php:3)
+Stack trace:
+#0 D:\workspaces\apache\testing\learn\protected\controllers\CateController.php(19): spl_autoload_call()
+#1 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): CateController->actionCategory()
+#2 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\workspaces\apache\framework\web\CController.php(286): CateController->runAction()
+#4 D:\workspaces\apache\framework\web\CController.php(265): CateController->runActionWithFilters()
+#5 D:\workspaces\apache\framework\web\CWebApplication.php(282): CateController->run()
+#6 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 D:\workspaces\apache\testing\learn\index.php(13): CWebApplication->run()
+REQUEST_URI=/cate/category
+in D:\workspaces\apache\testing\learn\protected\models\Cate.php (3)
+in D:\workspaces\apache\testing\learn\protected\controllers\CateController.php (19)
+in D:\workspaces\apache\testing\learn\index.php (13)
+2015/05/11 14:21:10 [error] [php] Undefined variable: _Get (D:\workspaces\apache\testing\learn\protected\controllers\CateController.php:39)
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(286): CateController->runAction()
+#1 D:\workspaces\apache\framework\web\CController.php(265): CateController->runActionWithFilters()
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(282): CateController->run()
+#3 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\workspaces\apache\testing\learn\index.php(13): CWebApplication->run()
+REQUEST_URI=/cate/return
+in D:\workspaces\apache\testing\learn\protected\controllers\CateController.php (39)
+in D:\workspaces\apache\testing\learn\index.php (13)
+2015/05/11 14:52:08 [error] [php] Trying to get property of non-object (D:\workspaces\apache\testing\learn\protected\views\cate\category.php:9)
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(869): CateController->renderFile()
+#1 D:\workspaces\apache\framework\web\CController.php(782): CateController->renderPartial()
+#2 D:\workspaces\apache\testing\learn\protected\controllers\CateController.php(45): CateController->render()
+#3 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): CateController->actionReturn()
+#4 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\workspaces\apache\framework\web\CController.php(286): CateController->runAction()
+#6 D:\workspaces\apache\framework\web\CController.php(265): CateController->runActionWithFilters()
+#7 D:\workspaces\apache\framework\web\CWebApplication.php(282): CateController->run()
+#8 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\workspaces\apache\testing\learn\index.php(13): CWebApplication->run()
+REQUEST_URI=/cate/return
+in D:\workspaces\apache\testing\learn\protected\views\cate\category.php (9)
+in D:\workspaces\apache\testing\learn\protected\controllers\CateController.php (45)
+in D:\workspaces\apache\testing\learn\index.php (13)
+2015/05/11 15:16:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addcate".' in D:\workspaces\apache\framework\web\CController.php:483
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(270): CController->missingAction('addcate')
+#1 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addcate')
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('site/addcate')
+#3 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/addcate
+---
+2015/05/12 12:30:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/12 12:30:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/12 13:34:48 [error] [exception.CException] exception 'CException' with message 'BookController cannot find the requested view "showbook".' in D:\workspaces\apache\framework\web\CController.php:878
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(782): CController->renderPartial('showbook', Array, true)
+#1 D:\workspaces\apache\testing\learn\protected\controllers\BookController.php(32): CController->render('showbook', Array)
+#2 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): BookController->actionReturnall()
+#3 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\workspaces\apache\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\workspaces\apache\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('returnall')
+#7 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/returnall')
+#8 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/book/returnall
+HTTP_REFERER=http://learn.dev/cate/returnall
+---
+2015/05/13 08:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "addcate".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('addcate')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/addcate
+---
+2015/05/13 08:37:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/13 08:37:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/13 08:40:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "addcate".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('addcate')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/addcate
+---
+2015/05/13 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "addcate".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('addcate')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/addcate
+---
+2015/05/13 08:43:53 [error] [exception.CException] exception 'CException' with message 'BookController cannot find the requested view "bookadd".' in D:\workspaces\apache\framework\web\CController.php:878
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(782): CController->renderPartial('bookadd', NULL, true)
+#1 D:\workspaces\apache\testing\learn\protected\controllers\BookController.php(7): CController->render('bookadd')
+#2 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): BookController->actionAddbook()
+#3 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\workspaces\apache\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\workspaces\apache\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addbook')
+#7 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/addbook')
+#8 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/book/addbook
+HTTP_REFERER=http://learn.dev/cate/returnall
+---
+2015/05/13 08:48:31 [error] [exception.CException] exception 'CException' with message 'BookController cannot find the requested view "bookadd".' in D:\workspaces\apache\framework\web\CController.php:878
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(782): CController->renderPartial('bookadd', NULL, true)
+#1 D:\workspaces\apache\testing\learn\protected\controllers\BookController.php(7): CController->render('bookadd')
+#2 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): BookController->actionAddbook()
+#3 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\workspaces\apache\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\workspaces\apache\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addbook')
+#7 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/addbook')
+#8 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/book/addbook
+HTTP_REFERER=http://learn.dev/cate/returnall
+---
+2015/05/13 08:48:36 [error] [exception.CException] exception 'CException' with message 'BookController cannot find the requested view "bookadd".' in D:\workspaces\apache\framework\web\CController.php:878
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(782): CController->renderPartial('bookadd', NULL, true)
+#1 D:\workspaces\apache\testing\learn\protected\controllers\BookController.php(7): CController->render('bookadd')
+#2 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): BookController->actionAddbook()
+#3 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\workspaces\apache\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\workspaces\apache\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addbook')
+#7 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/addbook')
+#8 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/book/addbook
+HTTP_REFERER=http://learn.dev/cate/returnall
+---
+2015/05/13 08:49:17 [error] [exception.CException] exception 'CException' with message 'BookController cannot find the requested view "bookadd".' in D:\workspaces\apache\framework\web\CController.php:878
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(782): CController->renderPartial('bookadd', NULL, true)
+#1 D:\workspaces\apache\testing\learn\protected\controllers\BookController.php(7): CController->render('bookadd')
+#2 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): BookController->actionAddbook()
+#3 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\workspaces\apache\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\workspaces\apache\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addbook')
+#7 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/addbook')
+#8 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/book/addbook
+HTTP_REFERER=http://learn.dev/cate/returnall
+---
+2015/05/13 08:57:57 [error] [exception.CException] exception 'CException' with message 'BookController cannot find the requested view "bookadd".' in D:\workspaces\apache\framework\web\CController.php:878
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(782): CController->renderPartial('bookadd', NULL, true)
+#1 D:\workspaces\apache\testing\learn\protected\controllers\BookController.php(7): CController->render('bookadd')
+#2 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): BookController->actionAddbook()
+#3 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\workspaces\apache\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\workspaces\apache\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addbook')
+#7 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/addbook')
+#8 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/book/addbook
+HTTP_REFERER=http://learn.dev/cate/returnall
+---
+2015/05/13 09:04:25 [error] [php] Array to string conversion (D:\workspaces\apache\testing\learn\protected\controllers\BookController.php:17)
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(286): BookController->runAction()
+#1 D:\workspaces\apache\framework\web\CController.php(265): BookController->runActionWithFilters()
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(282): BookController->run()
+#3 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\workspaces\apache\testing\learn\index.php(13): CWebApplication->run()
+REQUEST_URI=/book/books
+in D:\workspaces\apache\testing\learn\protected\controllers\BookController.php (17)
+in D:\workspaces\apache\testing\learn\index.php (13)
+2015/05/13 10:04:25 [error] [php] Creating default object from empty value (D:\workspaces\apache\testing\learn\protected\models\Cate.php:98)
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\workspaces\apache\framework\web\CController.php(286): CateController->runAction()
+#2 D:\workspaces\apache\framework\web\CController.php(265): CateController->runActionWithFilters()
+#3 D:\workspaces\apache\framework\web\CWebApplication.php(282): CateController->run()
+#4 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\workspaces\apache\testing\learn\index.php(13): CWebApplication->run()
+REQUEST_URI=/cate/change
+in D:\workspaces\apache\testing\learn\protected\models\Cate.php (98)
+in D:\workspaces\apache\testing\learn\protected\controllers\CateController.php (92)
+in D:\workspaces\apache\testing\learn\index.php (13)
+2015/05/13 10:04:34 [error] [php] Creating default object from empty value (D:\workspaces\apache\testing\learn\protected\models\Cate.php:98)
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\workspaces\apache\framework\web\CController.php(286): CateController->runAction()
+#2 D:\workspaces\apache\framework\web\CController.php(265): CateController->runActionWithFilters()
+#3 D:\workspaces\apache\framework\web\CWebApplication.php(282): CateController->run()
+#4 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\workspaces\apache\testing\learn\index.php(13): CWebApplication->run()
+REQUEST_URI=/cate/change
+in D:\workspaces\apache\testing\learn\protected\models\Cate.php (98)
+in D:\workspaces\apache\testing\learn\protected\controllers\CateController.php (92)
+in D:\workspaces\apache\testing\learn\index.php (13)
+2015/05/13 13:39:23 [error] [php] Trying to get property of non-object (D:\workspaces\apache\testing\learn\protected\views\book\book.php:11)
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(869): BookController->renderFile()
+#1 D:\workspaces\apache\framework\web\CController.php(782): BookController->renderPartial()
+#2 D:\workspaces\apache\testing\learn\protected\controllers\BookController.php(53): BookController->render()
+#3 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): BookController->actionReturn()
+#4 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\workspaces\apache\framework\web\CController.php(286): BookController->runAction()
+#6 D:\workspaces\apache\framework\web\CController.php(265): BookController->runActionWithFilters()
+#7 D:\workspaces\apache\framework\web\CWebApplication.php(282): BookController->run()
+#8 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\workspaces\apache\testing\learn\index.php(13): CWebApplication->run()
+REQUEST_URI=/book/return?id=8
+in D:\workspaces\apache\testing\learn\protected\views\book\book.php (11)
+in D:\workspaces\apache\testing\learn\protected\controllers\BookController.php (53)
+in D:\workspaces\apache\testing\learn\index.php (13)
+2015/05/13 13:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bookadd".' in D:\workspaces\apache\framework\web\CController.php:483
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(270): CController->missingAction('bookadd')
+#1 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('bookadd')
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/bookadd')
+#3 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/book/bookadd
+---
+2015/05/18 10:13:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/18 10:13:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/18 15:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addcate".' in D:\workspaces\apache\framework\web\CController.php:483
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(270): CController->missingAction('addcate')
+#1 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addcate')
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('site/addcate')
+#3 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/addcate
+---
+2015/05/18 15:36:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addcate".' in D:\workspaces\apache\framework\web\CController.php:483
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(270): CController->missingAction('addcate')
+#1 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addcate')
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('site/addcate')
+#3 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/addcate
+---
+2015/05/25 10:38:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/25 10:38:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/25 10:39:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addcate".' in D:\workspaces\apache\framework\web\CController.php:483
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(270): CController->missingAction('addcate')
+#1 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addcate')
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/addcate')
+#3 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/book/addcate
+---
+2015/05/25 10:39:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addcate".' in D:\workspaces\apache\framework\web\CController.php:483
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(270): CController->missingAction('addcate')
+#1 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addcate')
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/addcate')
+#3 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/book/addcate
+---
+2015/05/25 10:40:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addcate".' in D:\workspaces\apache\framework\web\CController.php:483
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CController.php(270): CController->missingAction('addcate')
+#1 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('addcate')
+#2 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('book/addcate')
+#3 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/book/addcate
+---
+2015/05/25 17:31:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://learn.dev/cate/addcate
+---
+2015/05/26 16:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://learn.dev/cate/addcate
+---
+2015/05/29 11:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://learn.dev/site/user
+---
+2015/05/29 11:05:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'learn.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+in D:\workspaces\apache\testing\learn\protected\models\User.php (14)
+in D:\workspaces\apache\testing\learn\protected\controllers\SiteController.php (124)
+in D:\workspaces\apache\testing\learn\index.php (13)
+2015/05/29 11:05:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{user}}" for active record class "User" cannot be found in the database.' in D:\workspaces\apache\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 D:\workspaces\apache\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\workspaces\apache\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 D:\workspaces\apache\testing\learn\protected\models\User.php(14): CActiveRecord->__construct()
+#3 D:\workspaces\apache\testing\learn\protected\controllers\SiteController.php(124): User->add('fgsf', 'w')
+#4 D:\workspaces\apache\framework\web\actions\CInlineAction.php(49): SiteController->actionShow()
+#5 D:\workspaces\apache\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\workspaces\apache\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\workspaces\apache\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\workspaces\apache\framework\web\CWebApplication.php(282): CController->run('show')
+#9 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('site/show')
+#10 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/show
+HTTP_REFERER=http://learn.dev/site/user
+---
+2015/05/29 17:16:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://learn.dev/book/return?id=12
+---
+2015/06/04 18:11:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/04 18:11:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\workspaces\apache\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\workspaces\apache\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\workspaces\apache\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\workspaces\apache\testing\learn\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
