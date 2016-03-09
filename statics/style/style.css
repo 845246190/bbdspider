@@ -1,0 +1,399 @@
+body {
+  background: #f6f6f6;
+}
+.main_cont {
+  background: #2e3c4b;
+}
+.right_cont {
+  padding-bottom: 40px;
+  background: #f6f6f6;
+}
+.s_identifica {
+  background: #f86b4f;
+  color: #ffffff;
+}
+.b_identifica {
+  background: #95a0aa;
+  color: #ffffff;
+}
+.btn_color {
+  background: #5faee3;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.dis_btn {
+  background: #8DC8F4;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.dis_btn:hover{
+  background: #63b7ef;
+}
+.btn1_color {
+  background: #a0d468;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.btn_color:hover {
+  background: #63b7ef;
+}
+.search_text {
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px #9bc3dd;
+  border: 1px solid #5faee3;
+}
+.text_color,
+.text_colors {
+  color: #f86b4f;
+}
+.search_note {
+  border: 1px solid #5faee3;
+  border-radius: 5px;
+}
+.search_note input[type=text] {
+  border: none;
+}
+.search_note input[type=submit] {
+  background: url(../images/search_icon.png) #ffffff no-repeat;
+  border-radius: 5px;
+}
+.header {
+  background: #34383c;
+}
+.header .add_task {
+  background: #34495e;
+  color: #95a0aa;
+}
+.header .add_task .add_task_href {
+  background: url(../images/add_task.png) no-repeat;
+}
+.header .overdue_statistical {
+  color: #89949f;
+}
+.header .user_do {
+  color: #666666;
+}
+.header .user_do .user_do_list {
+  background: #F2F2F2;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+.header .user_do .user_do_list ul li a {
+  color: #909090;
+}
+.header .user_do .user_do_list ul li a:hover {
+  color: #f86b4f;
+}
+.navs {
+  background: #2e3c4b;
+}
+.navs .navs_cont ul li {
+  border-left: 10px solid #2e3c4b;
+}
+.navs .navs_cont ul li a {
+  color: #98a2ad;
+}
+.navs .navs_cont ul li a:hover {
+  color: #f86b4f;
+}
+.navs .navs_cont ul li.hover_navs {
+  border-left: 10px solid #5faee3;
+  background: #2c3e50;
+}
+.navs .navs_cont ul li.hover_navs .b_identifica {
+  background: #f86b4f;
+}
+.navs .navs_cont ul li.hover_navs .hover_one_navs {
+  color: #f86b4f;
+}
+.navs .navs_cont ul li.hover_navs ul li.hover_two_navs {
+  border-right: 5px solid #f86b4f;
+}
+.navs .navs_cont ul li.hover_navs ul li.hover_two_navs a {
+  color: #f86b4f;
+}
+.navs .navs_cont ul li.hover_navs > a {
+  color: #f86b4f;
+}
+table.listing {
+  border: #5faee3;
+  background: #ffffff;
+}
+table.listing thead tr {
+  background: #f8f8f8;
+}
+table.listing thead tr th {
+  border: 1px solid #e4e4e4;
+  color: #333333;
+}
+table.listing tbody tr td {
+  border: 1px solid #e4e4e4;
+  color: #696969;
+}
+table.listing tbody tr td a {
+  color: #5faee3;
+}
+table.listing tbody tr td a:hover {
+  color: #f86b4f;
+}
+table.listing tbody tr:nth-child(even) {
+  background: #f6f8f9;
+}
+table.add_task_view tr {
+  color: #777777;
+}
+table.add_task_view tr td textarea {
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+table.document_view {
+  width: 100%;
+}
+table.document_view thead tr {
+  height: 66px;
+  background: #dde8ef;
+  border: 1px solid #e4e4e4;
+}
+table.document_view thead tr th {
+  color: #333333;
+}
+table.document_view tbody tr {
+  height: 70px;
+  border-bottom: 1px dashed #cccccc;
+}
+table.document_view tbody tr td {
+  color: #696969;
+}
+table.document_view tbody tr td a {
+  color: #5faee3;
+}
+table.document_view tbody tr td a:hover {
+  color: #f86b4f;
+}
+table.from_infor tr td {
+  color: #555555;
+}
+table.from_infor tr td textarea {
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+table.from_infor tr td input[type=text] {
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+table.from_infor tr td input[type=text].search_text {
+  border: 1px solid #5faee3;
+}
+table.from_infor tr td .limit input {
+  border: none;
+}
+table.from_infor tr td.intro a {
+  color: #555555;
+}
+table.from_infor tr td.intro a:hover {
+  color: #f86b4f;
+}
+.right_cont .right_navs {
+  color: #6c757e;
+  border-bottom: 1px solid #cccccc;
+  box-shadow: 0px 2px 5px #cccccc;
+}
+#inform,
+#print,
+#new_diary {
+  background: #ffffff;
+}
+.inform_title {
+  background: #34495e;
+  color: #ffffff;
+}
+#print h2 {
+  color: #333333;
+}
+#print .time {
+  color: #333333;
+}
+.diary_list li {
+  border-bottom: 1px dashed #cccccc;
+  cursor: move;
+}
+.diary_list li a {
+  color: #777777;
+}
+.task_list li {
+  color: #777777;
+}
+.task_list li .goods_attribute table th span {
+  color: #5faee3;
+}
+#new_diary .new_diary_form .diary_daaress {
+  color: #555555;
+}
+#new_diary .new_diary_form .diary_daaress a {
+  color: #555555;
+}
+#warehousing .check_in .check_num,
+#outbound .check_in .check_num,
+#withdrawing .check_in .check_num {
+  color: #666666;
+}
+#warehousing .check_in .check_num span.num,
+#outbound .check_in .check_num span.num,
+#withdrawing .check_in .check_num span.num {
+  color: #f86b4f;
+}
+#warehousing .check_in input[type=text].search_text,
+#outbound .check_in input[type=text].search_text,
+#withdrawing .check_in input[type=text].search_text {
+  border: 1px solid #5faee3;
+}
+#warehousing .check_in .check_list .check_head span,
+#outbound .check_in .check_list .check_head span,
+#withdrawing .check_in .check_list .check_head span {
+  color: #f86b4f;
+}
+#warehousing .check_in .check_list .list_cont,
+#outbound .check_in .check_list .list_cont,
+#withdrawing .check_in .check_list .list_cont {
+  border-top: 1px dashed #cccccc;
+}
+#warehousing .check_in .check_list .list_cont ul li,
+#outbound .check_in .check_list .list_cont ul li,
+#withdrawing .check_in .check_list .list_cont ul li {
+  color: #696969;
+}
+#warehousing .check_in .people_infor,
+#outbound .check_in .people_infor,
+#withdrawing .check_in .people_infor {
+  color: #555555;
+}
+#warehousing .check_in .people_infor input[type=text],
+#outbound .check_in .people_infor input[type=text],
+#withdrawing .check_in .people_infor input[type=text] {
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+.login_infor {
+  /*h2{
+        color: @color8;
+        text-align: center;
+    }*/
+
+}
+.login_infor .infor {
+  color: #656d78;
+  background: #ffffff;
+}
+.login_infor .infor h1 {
+  color: #5faee3;
+}
+.login_infor .infor .color div.color1 {
+  background: #fc6e51;
+  border-top-left-radius: 5px;
+}
+.login_infor .infor .color div.color2 {
+  background: #a0d468;
+}
+.login_infor .infor .color div.color3 {
+  background: #4fc0e9;
+}
+.login_infor .infor .color div.color4 {
+  background: #ac92ec;
+  border-top-right-radius: 5px;
+}
+.login_infor .infor div.notice_infor {
+  color: #aab2bd;
+}
+#new_stand {
+  background: #ffffff;
+}
+#new_stand .chose_task_way {
+  color: #777777;
+}
+#new_stand .stand_infor .stand_title span.stand_name {
+  color: #777777;
+}
+#new_stand .stand_infor ul li span.infor_name {
+  color: #555555;
+}
+#new_stand .stand_infor ul li div {
+  color: #777777;
+}
+#new_stand .stand_infor ul li.infor {
+  background: #f6f8f9;
+}
+#new_stand .stand_infor ul li.infor_main {
+  color: #696969;
+}
+#new_stand .stand_infor .suggest p {
+  color: #555555;
+}
+#new_stand .stand_infor .suggest textarea {
+  height: 120px;
+  border: 1px solid #e4e4e4;
+}
+#new_stand .stand_infor .inform span {
+  color: #555555;
+}
+.file {
+  color: #ffffff;
+  background: #5faee3;
+  border-radius: 5px;
+}
+.update_img {
+  color: #777777;
+}
+.break {
+  color: #333333;
+}
+.break .break_h {
+  color: #5faee3;
+}
+.manager_list li span {
+  color: #333333;
+}
+.manager_list li>div {
+  border-top: 1px dashed #cccccc;
+}
+.manager_list li div span {
+  color: #555555;
+}
+.inform_list .main_list li {
+  border: 1px solid #e4e4e4;
+  color: #888888;
+}
+.inform_list .main_list li:nth-child(4n+1) .inform_icon {
+  background: #E9AD4D;
+}
+.inform_list .main_list li:nth-child(4n+2) .inform_icon {
+  background: #EC7364;
+}
+.inform_list .main_list li:nth-child(4n+3) .inform_icon {
+  background: #35C583;
+}
+.inform_list .main_list li:nth-child(4n+4) .inform_icon {
+  background: #5faee3;
+}
+.select input,
+.select1 input,
+.select2 input {
+  color: #696969;
+}
+.status_infor{
+  text-align: center;
+  position: relative;
+}
+.status_cont{
+  width: 500px;
+  height: 360px;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  margin-top: -180px;
+}
+.status_cont p{
+  color: #F86B4F;
+  font-size: 30px;
+  margin-top: 50px;
+}

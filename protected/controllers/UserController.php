@@ -1,5 +1,5 @@
 <?php
-class UserController extends UserController
+class UserController extends Controller
 {
 	public function action()
 	{

@@ -222,7 +222,7 @@ class UserBehavior extends CActiveRecordBehavior
         return $result;
     }
 
-    //重置密码
+    //修改密码
     public function changepasswd($user_id,$newpasswd)
     {
         $result = 0;
@@ -236,6 +236,73 @@ class UserBehavior extends CActiveRecordBehavior
             }
         } else {
             return -2;
+        }
+        return $result;
+    }
+
+    //检查密码
+    public function checkpasswd($user_id,$passwd)
+    {
+        $result = true;
+        $criteria = new CDbCriteria;
+        $criteria->addColumnCondition(array('is_deleted'=>User::DELETED_NO,'id'=>$user_id));
+        $data = $this->getOwner()->find($criteria);
+        if (!empty($data)) {
+            if ($data->passwd != md5($passwd)) {
+                $result = false;
+            }
+        }
+        return $result;
+    }
+
+
+    //删除用户
+    public function deleted($user_id)
+    {
+        $result = 0;
+        if (!empty($user_id)) {
+            $criteria = new CDbCriteria;
+            $criteria->addColumnCondition(array('is_deleted'=>User::DELETED_NO, 'id'=>$user_id));
+            $data = $this->getOwner()->find($criteria);
+            if (!empty($data)) {
+                if ($data->login_name=='admin') {
+                    return -1;
+                }
+                $data->is_deleted = User::DELETED_YES;
+                if ($data->save()) {
+                    $result = $data->id;
+                }
+            }
+        }
+        return $result;
+    }
+
+    public function changestatus($user_id,$status='')
+    {
+        $result = 0;
+        $criteria = new CDbCriteria;
+        $criteria->addColumnCondition(array('is_deleted'=>User::DELETED_NO, 'id'=>$user_id));
+        $data = $this->getOwner()->find($criteria);
+        if (!empty($data)) {
+            if ($data->login_name=='admin') {
+                return -1;
+            }
+            if (empty($status)) {
+                if ($data->status==User::STATUS_DISABLE) {
+                    $data->status = User::STATUS_NORMAL;
+                } else {
+                    $data->status = User::STATUS_DISABLE;
+                }
+            } else {
+                if ($status==-1) {
+                    $data->status = 0;
+                } else {
+                    $data->status = $status;
+                }
+            }
+            if ($data->save()) {
+                $result = $data->id;
+            }
         }
         return $result;
     }

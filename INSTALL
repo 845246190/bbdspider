@@ -1,0 +1,6 @@
+1. copy main.php.bak to main.php
+
+2. 配置db，并导入data/factory_oa.sql
+
+3. 配置db_ex
+
