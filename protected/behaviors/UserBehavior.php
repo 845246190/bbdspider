@@ -307,5 +307,59 @@ class UserBehavior extends CActiveRecordBehavior
         return $result;
     }
 
+    //用户列表
+    public function listByAttr($arr)
+    {
+        $result['data'] = array();
+        $result['pager'] = array();
+        $criteria = new CDbCriteria;
+        $criteria->addColumnCondition(array('is_deleted'=>User::DELETED_NO));
+        if (!empty($arr)) {
+            if (!empty($arr['status'])) {
+                #0 全部  1  启用  2  禁用
+                if ($arr['status']==1) {
+                    $criteria->addColumnCondition(array('status'=>'0'));
+                } else if($arr['status']==2) {
+                    $criteria->addColumnCondition(array('status'=>'1'));
+                }
+            }
+            if (!empty($arr['key'])) {
+                $criteria2 = new CDbCriteria;
+                $criteria2->addSearchCondition('login_name',$arr['key']);
+                $criteria2->addSearchCondition('nick_name',$arr['key']);
+                $criteria2->addSearchCondition('contact',$arr['key']);
+                $criteria->mergeWith($criteria2,true);
+            }
+            if (!empty($arr['page'])) {
+                $count = $this->getOwner()->count($criteria);
+                $pager = new CPagination;
+                $pager->validateCurrentPage = false;
+                $pager->setItemCount($count);
+                $pager->setCurrentPage($arr['page']-1);
+                $pager->setPageSize($arr['page_size']);
+                $pager->applyLimit($criteria);
+                $result['pager'] = $pager;
+            }
+            $data = $this->getOwner()->findAll($criteria);
+            $role_list = $this->role;
+            if (!empty($data)) {
+                foreach ($data as $key => $value) {
+                    $result['data'][$key] = $value->attributes;
+                    unset($result['data'][$key]['passwd']);
+                    $result['data'][$key]['role_arr'] = array();
+                    $role = CJSON::decode($value->role);
+                    if (!empty($role) && is_array($role)) {
+                        foreach ($role as $rk => $rv) {
+                            if (!empty($role_list[$rv])) {
+                                $result['data'][$key]['role_arr'][$rv] = $role_list[$rv];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return $result;
+    }
+
 }
 ?>
