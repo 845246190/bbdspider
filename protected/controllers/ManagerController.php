@@ -219,6 +219,63 @@ class ManagerController extends Controller
             }
         } else {
             $user_id = Yii::app()->request->getQuery('user_id');
+            if (empty($user_id)) {
+                $this->showError('未选择用户',$this->referrer);
+                return;
+            }
+            $result = User::model()->changestatus($user_id);
+            if ($result>0) {
+                $this->showSuccess('修改状态成功!',$this->referrer);
+                return;
+            } else if($result == -1) {
+                $this->showError('不能对超级管理员进行操作!',$this->referrer);
+            } else {
+                $this->showError('修改状态失败',$this->referrer);
+            }
+        }
+    }
+
+    public function actionEdit()
+    {
+        $user = Yii::app()->request->getQuery('user');
+        if (empty($user['id'])) {
+            $this->showError('未选择用户',$this->referrer);
+            return;
+        }
+        $result = User::model()->edit($user);
+        if ($result) {
+            $this->showSuccess('修改成功!',$this->referrer);
+            return;
+        } else {
+            $this->showError('修改失败!',$this->referrer);
+        }
+    }
+
+    public function actionEditrole()
+    {
+        $user = Yii::app()->request->getPost('user');
+        if (empty($user['role']) || !is_array($user['role'])) {
+            $this->showError('未选择角色',$this->referrer);
+            return;
+        }
+        if (empty($user['id'])) {
+            $this->showError('未选择用户',$this->referrer);
+            return;
+        }
+        $user_info = User::mode()->findByPk($user['id']);
+        if (empty($user_info)) {
+            $this->showError('用户不存在',$this->referrer);
+        }
+        if ($user_info['login_name'] == 'admin') {
+            $this->showError('不能对超级管理员进行操作!',$this->referrer);
+            return;
+        }
+        $result = User::model()->edit($user);
+        if ($result) {
+            $this->showSuccess('修改成功!',$this->referrer);
+            return;
+        } else {
+            $this->showError('修改失败!',$this->referrer);
         }
     }
 }

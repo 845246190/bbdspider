@@ -85,9 +85,9 @@ class UserBehavior extends CActiveRecordBehavior
     public function addManager($arr)
     {
         $id = 0;
-        if (!empty($arr['name'] || !$this->isUsingName($arr['name'])) {
+        if (!empty($arr['name'])|| !$this->isUsingName($arr['name']) {
             $user = new User;
-            $user ->login_name = $arr['name'];
+            $user->login_name = $arr['name'];
             if (!empty($arr['nick_name'])) {
                 $user->nick_name = $arr['nick_name'];
             } else {
